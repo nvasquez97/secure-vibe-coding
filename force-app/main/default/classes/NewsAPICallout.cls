@@ -1,8 +1,6 @@
-// sf-secure NOTE: API key read from Custom Metadata (NewsAPIConfig__mdt) for zero-config demo deployment.
-// In production, migrate to Named Credential with External Credential auth parameter.
 public with sharing class NewsAPICallout {
 
-    private static final String BASE_URL = 'https://newsapi.org/v2/everything';
+    private static final String BASE_URL = 'callout:NewsAPI/v2/everything';
     private static final Integer PAGE_SIZE = 5;
 
     public interface IHttpCallout {
@@ -45,14 +43,12 @@ public with sharing class NewsAPICallout {
     }
 
     private String buildEndpoint(String accountName) {
-        NewsAPIConfig__mdt config = NewsAPIConfig__mdt.getInstance('NewsAPI');
-        String apiKey = config != null ? config.API_Key__c : '';
         String encoded = EncodingUtil.urlEncode(accountName, 'UTF-8');
         return BASE_URL
             + '?q=' + encoded
             + '&sortBy=publishedAt'
-            + '&pageSize=' + PAGE_SIZE
-            + '&apiKey=' + apiKey;
+            + '&pageSize=' + PAGE_SIZE;
+        // API key is injected as X-Api-Key header by the NewsAPI Named Credential
     }
 
     private List<NewsArticle> parseResponse(String body) {
