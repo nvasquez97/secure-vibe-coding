@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Risk_Callout_Timeout</fullName>
+        <categories>RiskAdvisor</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Callout Timeout</shortDescription>
+        <value>The risk assessment request timed out. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Low_Recommendation</fullName>
+        <categories>RiskAdvisor</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Low Recommendation</shortDescription>
+        <value>Low risk detected. Standard terms apply. Proceed with confidence.</value>
+    </labels>
+    <labels>
+        <fullName>Risk_High_Recommendation</fullName>
+        <categories>RiskAdvisor</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk High Recommendation</shortDescription>
+        <value>HIGH RISK: Escalate to finance. Consider reduced credit terms.</value>
+    </labels>
+    <labels>
+        <fullName>Risk_Assessment_Pending</fullName>
+        <categories>RiskAdvisor</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk Assessment Pending</shortDescription>
+        <value>Risk assessment in progress. Results will appear shortly.</value>
+    </labels>
+    <labels>
+        <fullName>Risk_No_Assessment</fullName>
+        <categories>RiskAdvisor</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Risk No Assessment</shortDescription>
+        <value>No risk assessment available. Save the opportunity to trigger one.</value>
+    </labels>
+</CustomLabels>

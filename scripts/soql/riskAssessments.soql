@@ -1,0 +1,1 @@
+SELECT Id, Name, Status__c, Risk_Level__c, Risk_Score__c, Article_Count__c, Negative_Signal_Count__c, Assessment_Date__c, Opportunity__r.Name FROM Risk_Assessment__c ORDER BY CreatedDate DESC LIMIT 20
