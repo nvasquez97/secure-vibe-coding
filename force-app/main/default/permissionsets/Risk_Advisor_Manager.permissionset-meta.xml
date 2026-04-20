@@ -3,6 +3,10 @@
     <description>Full access to manage risk assessments and trigger manual re-assessments. Assign to admin/manager users with standard profiles.</description>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Risk Advisor Manager</label>
+    <externalCredentialPrincipalAccesses>
+        <enabled>true</enabled>
+        <externalCredentialPrincipal>NewsAPIExtCred-ServicePrincipal</externalCredentialPrincipal>
+    </externalCredentialPrincipalAccesses>
     <classAccesses>
         <apexClass>RiskAssessmentController</apexClass>
         <enabled>true</enabled>
