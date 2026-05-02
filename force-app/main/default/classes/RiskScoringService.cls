@@ -2,7 +2,7 @@ public with sharing class RiskScoringService {
 
     private static final List<String> NEGATIVE_KEYWORDS = new List<String>{
         'lawsuit', 'fraud', 'bankruptcy', 'recall', 'fine',
-        'penalty', 'loss', 'investigation', 'scandal', 'layoff'
+        'penalty', 'loss', 'investigation', 'scandal', 'layoff', 'shutdown'
     };
 
     public class ScoringResult {
